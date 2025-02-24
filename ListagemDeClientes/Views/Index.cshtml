@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Cliente>
+
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null)
+        {
+            @foreach(var itens in Model)
+            {
+                <tr>
+                    <th scope="row">@itens.Nome</th>
+                    <td>@itens.Email</td>
+                    <td>@itens.Telefone</td>
+                    <td>@itens.Cargo</td>
+                </tr>
+            }
+        }
+    
+</table>

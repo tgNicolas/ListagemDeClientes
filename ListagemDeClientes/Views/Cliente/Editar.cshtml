@@ -1,0 +1,36 @@
+﻿@model Cliente
+
+@{
+    ViewBag.Title = "Minha Página";
+}
+
+<form method="post" asp-controller="Cliente" asp-action="Editar">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label for="Nome" class="form-label">Nome</label>
+        <input asp-for="Nome" type="text" class="form-control" id="Nome" aria-describedby="emailHelp">
+        <span asp-validation-for="Nome" style="color:red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input asp-for="Email" type="email" class="form-control" id="Email">
+        <span asp-validation-for="Email" style="color: red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Telefone" class="form-label">Telefone</label>
+        <input asp-for="Telefone" type="number" class="form-control" id="Telefone">
+        <span asp-validation-for="Telefone" style="color: red"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Cargo" class="form-label">Cargo</label>
+        <input asp-for="Cargo" type="text" class="form-control" id="Cargo">
+        <span asp-validation-for="Cargo" style="color: red"></span>
+    </div>
+
+    <button  type="submit" class="btn btn-primary">Cadastrar</button>
+</form>
+
+

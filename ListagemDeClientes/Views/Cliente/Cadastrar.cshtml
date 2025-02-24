@@ -1,0 +1,71 @@
+﻿@model Cliente
+
+
+
+
+
+<div class="container-2">
+
+    
+    <div class="centralizar-form" >
+
+        <div class="face2"
+             data-aos="fade-right"
+             data-aos-duration="1000"
+        >
+            <h3>
+                Cadastre um novo <br /> Cliente aqui
+            </h3>
+            
+        </div>
+   
+    <div class="formulario"
+             data-aos="fade-left"
+             data-aos-duration="1000">
+        
+
+       
+        <form method="post" asp-controller="Cliente" asp-action="Cadastrar">
+
+            <div class="UserDiv">
+                <img class="imgUser" src="~/img/icons8-cadastro.gif" />
+            </div>
+                <div class="row">
+            <div class="col-12">
+                <label for="Nome" class="form-label">Nome</label>
+                <input asp-for="Nome" type="text" class="form-control" id="Nome" aria-describedby="emailHelp" >
+               <span asp-validation-for="Nome" style="color:red"></span>
+            </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                <label for="Email" class="form-label">Email</label>
+                <input asp-for="Email" type="email" class="form-control" id="Email">
+                <span class="MsgRequired" asp-validation-for="Email" style="color: red"></span>
+            </div>
+                    </div>
+                <div class="row">
+                    <div class="col-6">
+                <label for="Telefone" class="form-label">Telefone</label>
+                <input asp-for="Telefone" type="number" class="form-control" id="Telefone">
+                <span asp-validation-for="Telefone" style="color: red"></span>
+            </div>
+
+                    <div class="col-6">
+                <label for="Cargo" class="form-label">Cargo</label>
+                <input asp-for="Cargo" type="text" class="form-control" id="Cargo">
+                <span asp-validation-for="Cargo" style="color: red"></span>
+            </div>
+                </div>
+            <div class="GrupoBtn" >
+                <button type="submit" class="btn btn-success border-0">Cadastrar</button>
+            </div>
+            
+        </form>
+           
+    </div>
+    </div>
+</div>
+</>
+
+
