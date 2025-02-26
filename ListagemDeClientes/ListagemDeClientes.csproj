@@ -19,7 +19,12 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\css\Style.css" />
+    <Content Remove="wwwroot\img\logo.png" />
     <Content Remove="wwwroot\style.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="imag\logo.png" />
   </ItemGroup>
 
   <ItemGroup>

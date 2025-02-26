@@ -31,6 +31,10 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 
@@ -44,10 +48,39 @@ body {
     background-color: #415aca;
 }
 
-.section-cards{
-    width: 100%;
-    height: 80%;
+.BotaoHome {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.nav-link2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: orange;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s all;
+}
+
+    .nav-link2:hover {
+        background-color: black;
+        color: #ff7300;
+        border: 2px solid orange;
+        box-shadow: 2px 8px 52px 0px rgba(255,115,0,1);
+        transition: 0.5s all;
+    }
+
+    .section-cards {
+        width: 100%;
+        height: 80%;
+    }
 
 .card-img-top {
     margin-top: 1.5rem;
@@ -132,13 +165,22 @@ body {
 }
 
 .navbar {
-    background-color: #415aca;
     color: white;
     font-size: 20px;
     height: 100px;
     width: 100%;
     color: white;
-    box-shadow: 15px 7px 13px -2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+.imgLogo{
+    width: 300px;
+    height: 200px;
 }
 
 .botao-nav {
@@ -343,11 +385,15 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color: orange;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2 );
-    color: black;
+ 
     transition: 0.3s;
     border-radius: 12px;
+}
+
+.nav-item {
+    color: goldenrod;
 }
 
     .nav-link:hover {
